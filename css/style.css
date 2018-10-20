@@ -14,12 +14,13 @@
 /* The navigation menu links */
 .sidenav a {
     padding: 10px;
+    padding-left: 45px;
     text-decoration: none;
     font-size: 25px;
     color: #818181;
     display: block;
     border-bottom: 1px grey solid;
-    text-align: center;
+    text-align: left;
     font-size: 20px;
 }
 
@@ -27,7 +28,9 @@
 .sidenav a:hover {
     color: #f1f1f1;
 }
-
+.sidenav span {
+    margin-right:10px;
+}
 /* Style page content */
 .main {
     margin-left: 200px; /* Same as the width of the sidebar */
@@ -39,5 +42,32 @@
     width: 100%;
     margin: 0px;
     padding: 0px;
-
+}
+.sidenav-footer {
+    position:absolute;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    width:100%;
+    margin:0;
+   
+}
+.social {
+    padding:0;
+    text-align: center;
+}
+.social li {
+    display: inline-block;
+   font-size:18px;
+   margin-right: 10px;
+}
+.social a {
+   padding:0;
+   border: none;
+}
+.social :last-child {
+    margin:0;
+}
+.copyright {
+    color: #818181;
 }

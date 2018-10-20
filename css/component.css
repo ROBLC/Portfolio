@@ -7,6 +7,7 @@ html, body { height: 100%; }
 	-webkit-perspective: 1200px;
 	-moz-perspective: 1200px;
 	perspective: 1200px;
+	overflow: hidden;
 	
 }
 
@@ -158,17 +159,6 @@ html, body { height: 100%; }
 	display: none;
 }
 
-.pt-message {
-	display: none;
-	position: absolute;
-	z-index: 99999;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	background: #da475c;
-	color: #fff;
-	text-align: center;
-}
 
 .pt-message p {
 	margin: 0;
