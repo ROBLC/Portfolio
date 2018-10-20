@@ -11,7 +11,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="css/animations.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/component.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
-    <script type="text/javascript" href="js/modernizr.custom.js"></script>
+    <script type="text/javascript" src="js/modernizr.js"></script>
 
 
 </head>
@@ -20,19 +20,19 @@
     <!-- Side navigation -->
     <div class="sidenav">
         <img id="personalImg" src="https://via.placeholder.com/150x150">
-        <a class="navPage" href="#">Home</a>
-        <a class="navPage" href="#">About Me</a>
-        <a class="navPage" href="#">Resume</a>
-        <a class="navPage" href="#">Portfolio</a>
-        <a class="navPage" href="#">Contact</a>
+        <a id="home" class="navPage" href="#">Home</a>
+        <a id="aboutMe" class="navPage" href="#">About Me</a>
+        <a id="resume" class="navPage" href="#">Resume</a>
+        <a id="portfolio" class="navPage" href="#">Portfolio</a>
+        <a id="contact" class="navPage" href="#">Contact</a>
     </div>
     <!-- Main Section-->
     <main id="pt-main" class="pt-perspective">
-        <div id="home" class="pt-page pt-page-1 ">1</div>
-        <div id="aboutMe" class="pt-page pt-page-2 pt-page-current">2</div>
-        <div id="resume" class="pt-page pt-page-3">3</div>
-        <div id="portfolio" class="pt-page pt-page-4">4</div>
-
+        <div id="homePage" class="pt-page pt-page-1" data-number="1">1</div>
+        <div id="aboutMePage" class="pt-page pt-page-2" data-number="2">2</div>
+        <div id="resumePage" class="pt-page pt-page-3" data-number="3">3</div>
+        <div id="portfolioPage" class="pt-page pt-page-4" data-number="4">4</div>
+        <div id="contactPage" class="pt-page pt-page-5" data-number="5">5</div>
 
     </main>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
