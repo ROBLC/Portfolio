@@ -10,6 +10,7 @@
         crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
         crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Dancing+Script|Source+Serif+Pro" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" href="css/animations.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/component.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
@@ -19,21 +20,40 @@
 </head>
 
 <body>
+    <nav id="mobileNavbar" class=" d-none d-block  d-sm-none navbar navbar-expand-sm navbar-dark bg-dark ">
+        <a class="navbar-brand" href="#">Robert Lopez</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a id="home" class="navPage" href="#"><span><i class="fas fa-home"></i></span>Home</a>
+                <a id="aboutMe" class="navPage" href="#"><span><i class="fas fa-user"></i></span>About Me</a>
+                <a id="portfolio" class="navPage" href="#"><span><i class="fas fa-briefcase"></i></span>Portfolio</a>
+                <a id="contact" class="navPage" href="#"><span><i class="fas fa-mail-bulk"></i></span>Contact</a>
+            </div>
+        </div>
+    </nav>
     <!-- Side navigation -->
     <div class="sidenav">
-        <img id="personalImg" src="assets/ROB.JPG">
+        <div id="sideImgContainer">
+            <img id="personalImg" src="assets/ROB.JPG">
+            <div class="text-block">
+                <h3>Robert Lopez</h4>
+            </div>
+        </div>
         <a id="home" class="navPage" href="#"><span><i class="fas fa-home"></i></span>Home</a>
         <a id="aboutMe" class="navPage" href="#"><span><i class="fas fa-user"></i></span>About Me</a>
-        <a id="resume" class="navPage" href="#"><span><i class="fas fa-file-alt"></i></span>Resume</a>
         <a id="portfolio" class="navPage" href="#"><span><i class="fas fa-briefcase"></i></span>Portfolio</a>
         <a id="contact" class="navPage" href="#"><span><i class="fas fa-mail-bulk"></i></span>Contact</a>
 
         <footer class="sidenav-footer">
             <ul class="social">
-                <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
-                <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
-                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-                <li><a href="#"><i class="fab fa-github-square"></i></a></li>
+                <li><a href="https://www.facebook.com/Jezuz.RobertOo" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
+                <li><a href="https://twitter.com/robz_77?lang=es" target="_blank"><i class="fab fa-twitter-square"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/robert-lopez-447591172/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="https://github.com/ROBLC" target="_blank"><i class="fab fa-github-square"></i></a></li>
             </ul>
             <div class="copyright">
                 <p>2018 &copy; Robert Lopez<br>All Right Reserved.</p>
@@ -42,11 +62,169 @@
     </div>
     <!-- Main Section-->
     <main id="pt-main" class="pt-perspective">
-        <div id="homePage" class="pt-page pt-page-1" data-number="1">1</div>
-        <div id="aboutMePage" class="pt-page pt-page-2" data-number="2">2</div>
-        <div id="resumePage" class="pt-page pt-page-3" data-number="3">3</div>
-        <div id="portfolioPage" class="pt-page pt-page-4" data-number="4">4</div>
-        <div id="contactPage" class="pt-page pt-page-5" data-number="5">5</div>
+        <div id="homePage" class="pt-page pt-page-0" data-number="0">
+            <div class="container h-100">
+                <div class="row h-100 d-flex align-items-center">
+                    <div class="col-lg-12  ">
+                        <p id="homeName" class="text-center"> <span>Robert Lopez</span></p>
+                        <p id="trade" class="text-center "><span>Full Stack Web Developer</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="aboutMePage" class="pt-page pt-page-1" data-number="1">
+            <div class="container">
+                <div class="row mt-3">
+                    <div id="aboutMeHeader" class="col-md-12 text-left">
+                        <h1>About Me</h1>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div id="aboutText" class="col-md-8">
+                        <h3 class="mb-5">Web Developer</h3>
+                        <p>I am a Mexican-American Web developer that loves to create and design working web apps.
+                            Designing and making a functional product is a very satisfying feeling</p>
+
+                        <p>Tech has always been on top of the things I like, since a young age I love to use computers
+                            and tackle any issues or problems that arise, having dedicated many hours to learning new
+                            things just to understand and solve a simple problem. I’m also a big gamer and love
+                            strategy games.</p>
+
+                        <p>I am married and have a beautiful 12-month-old daughter. I love spending time with my
+                            family and just enjoying my life with them. My wife and I own a small business, but I
+                            would love to get into a more tech related career.</p>
+                    </div>
+                    <div id="aboutStats" class="col-md-4">
+                        <h3 class="mb-5">Personal Information</h3>
+                        <ul>
+                            <li><span>Name : Robert Lopez</span></li>
+                            <li><span>Age : 25 Years</span></li>
+                            <li><span>Residence : Zacatecas, Mexico</span></li>
+                            <li><span>Email : robz.l.c.77@gmail.com</span></li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div id="aboutServices" class="row mt-5">
+                    <div class="col-md-12 text-center">
+                        <h3 class="mb-5">Services</h3>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <i class="fas fa-laptop-code"></i>
+                                <h5>Full Stack Web Development</h5>
+                                <p>Client-side and server-side from the ground up tailored to your needs</p>
+                            </div>
+                            <div class="col-md-3">
+                                <i class="fas fa-laptop"></i>
+                                <h5>Front-end Web Development</h5>
+                                <p>Client-side development to create that awesome page you need</p>
+                            </div>
+                            <div class="col-md-3">
+                                <i class="fas fa-server"></i>
+                                <h5>Back-end Web Development</h5>
+                                <p>Server-side development for exceptional comunication and performance</p>
+                            </div>
+                            <div class="col-md-3">
+                                <i class="fas fa-pencil-alt"></i>
+                                <h5>Web Design</h5>
+                                <p>Web designing to update and refresh your page</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="portfolioPage" class="pt-page pt-page-2" data-number="2">
+            <div class="container">
+                <div class="row mt-3">
+                    <div id="portfolioHeader" class="col-md-12 text-left">
+                        <h1>Portfolio</h1>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-md-3  d-flex align-items-stretch align-items-center justify-content-center  mb-4">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="https://images.alphacoders.com/107/thumb-1920-107763.jpg"
+                                alt="Star wars death star" width="200px" height="200px">
+                            <div class="card-body text-center">
+                                <h3 class="card-title">Star Wars RPG</h3>
+                                <p class="card-text">A simple browser game that uses JS.</p>
+                                <a href="https://roblc.github.io/Star-Wars-RPG" target="_blank" class="btn mr-2 mb-2">Check
+                                    it out</a>
+                                <a href="https://github.com/ROBLC/Star-Wars-RPG" target="_blank" class="btn mr-2 mb-2">Github</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3  d-flex align-items-stretch align-items-center justify-content-center mb-4">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="https://media3.giphy.com/media/Cmr1OMJ2FN0B2/giphy.gif" alt="Cute penguin GIF"
+                                width="200px" height="200px">
+                            <div class="card-body  text-center">
+                                <h3 class="card-title">GIF Finder</h3>
+                                <p class="card-text">Awesome web app to find gifs!!</p>
+                                <a href="https://roblc.github.io/Gif-finder/" target="_blank" class="btn mr-2 mb-2">Check
+                                    it
+                                    out</a>
+                                <a href="https://github.com/ROBLC/Gif-finder" target="_blank" class="btn mr-2 mb-2">Github</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3  d-flex align-items-stretch align-items-center justify-content-center  mb-4">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="https://images.unsplash.com/photo-1527839321757-ad3a2f2be351?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=5119f7646de66b3a24249b7469b30423&auto=format&fit=crop&w=1050&q=80"
+                                alt="Train Station" width="200px" height="200px">
+                            <div class="card-body  text-center">
+                                <h3 class="card-title">Train Scheduler</h3>
+                                <p class="card-text">Cool Train-scheduler that uses JS and firebase.</p>
+                                <a href="https://roblc.github.io/train-scheduler/" target="_blank" class="btn mr-2 mb-2">Check
+                                    it out</a>
+                                <a href="https://github.com/ROBLC/train-scheduler" target="_blank" class="btn mr-2 mb-2">Github</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3  d-flex align-items-stretch align-items-center mb-4 justify-content-center">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="https://cdn2.benzinga.com/files/imagecache/1024x768xUP/images/story/2012/coffee-3080833_1920.jpg"
+                                alt="Train Image" width="200px" height="200px">
+                            <div class="card-body  text-center">
+                                <h3 class="card-title">Fellawees</h3>
+                                <p class="card-text">Nice web app to search for news and celebs!!</p>
+                                <a href="https://fellaweez.herokuapp.com/" target="_blank" class="btn mr-2 mb-2">Check
+                                    it
+                                    out</a>
+                                <a href="https://github.com/lugof/Project1" target="_blank" class="btn mr-2 mb-2">Github</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="contactPage" class="pt-page pt-page-3" data-number="3">
+            <div class="container">
+                <div class="row">
+                    <div id="contactHeader" class="col-md-12">
+                        <h1>Contact</h1>
+                    </div>
+                </div>
+                <div id="contactTypes" class="row">
+                    <div class="col-md-12 text-center mt-5">
+                        <h3>Let's Talk</h3>
+                    </div>
+                    <div class="col-md-6 text-center mt-5">
+                        <i class="fas fa-envelope-square"></i>
+                        <h5>robz.l.c.77@gmail.com</h5>
+                    </div>
+                    <div class="col-md-6 text-center mt-5">
+                        <i class="fas fa-mobile-alt"></i>
+                        <h5>+52 492 134 7396</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
 
     </main>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

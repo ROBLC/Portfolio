@@ -32,6 +32,21 @@ var PageTransitions = (function () {
 
 
 		$(".sidenav").on("click", ".navPage", function () {
+			if (isAnimating) {
+				return false;
+			}
+			pageLink = $(this).attr("id");
+			console.log(pageLink)
+			pageName = $("#" + pageLink + "Page")
+			console.log(pageName.attr("data-number"));
+			pageNumb = pageName.attr("data-number");
+			nextPage(pageNumb);
+
+		})
+		$(".navbar").on("click", ".navPage", function () {
+			if (isAnimating) {
+				return false;
+			}
 			pageLink = $(this).attr("id");
 			console.log(pageLink)
 			pageName = $("#" + pageLink + "Page")
@@ -42,33 +57,22 @@ var PageTransitions = (function () {
 		})
 
 
+
 	}
 
 	function nextPage(options) {
 
+
+		console.log(options);
 		if (isAnimating) {
 			return false;
 		}
 
 		isAnimating = true;
 		var $currPage = $pages.eq(current);
-		if (options.showPage) {
-			if (options.showPage < pagesCount - 1) {
-				current = options.showPage;
-			}
-			else {
-				current = 0;
-			}
-		}
-		else {
-			if (current < pagesCount - 1) {
-				++current;
-			}
-			else {
-				current = 0;
-			}
-		}
-		var $nextPage = $pages.eq(current).addClass('pt-page-current'),
+
+		current = options;
+		var $nextPage = $pages.eq(options).addClass('pt-page-current'),
 			outClass = 'pt-page-rotateCarouselLeftOut pt-page-ontop', inClass = 'pt-page-rotateCarouselLeftIn';
 
 
