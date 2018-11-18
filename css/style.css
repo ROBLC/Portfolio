@@ -61,15 +61,7 @@ html body {
     margin: 0px;
     padding: 0px;
 }
-.text-block {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    background-color: #40b3a2;
-    color: white;
-    padding: 0;
-    text-align: center
-}
+
 .sidenav-footer {
     position:absolute;
     left: 0;
